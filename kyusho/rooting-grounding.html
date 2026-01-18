@@ -90,11 +90,11 @@
             padding: 16px;
             margin: 20px 0;
             border-radius: 4px;
+        }
 
-            h4,
-            p {
-                margin: 0;
-            }
+        .highlight-box h4,
+        .highlight-box p {
+            margin: 0;
         }
 
         .concept-box {
@@ -103,11 +103,11 @@
             padding: 16px;
             margin: 20px 0;
             border-radius: 6px;
+        }
 
-            h4,
-            p {
-                margin: 0;
-            }
+        .concept-box h4,
+        .concept-box p {
+            margin: 0;
         }
 
         .checkpoint-box {
@@ -116,11 +116,11 @@
             padding: 16px;
             margin: 20px 0;
             border-radius: 6px;
+        }
 
-            h4,
-            p {
-                margin: 0;
-            }
+        .checkpoint-box h4,
+        .checkpoint-box p {
+            margin: 0;
         }
 
         .error-box {
@@ -129,14 +129,6 @@
             padding: 16px;
             margin: 20px 0;
             border-radius: 4px;
-        }
-
-        .demo-box {
-            /*    background: #f5f5f5;
-            border-left: 4px solid #95a5a6;
-            padding: 16px;
-            margin: 20px 0;
-            border-radius: 6px;*/
         }
 
         strong {
@@ -210,6 +202,144 @@
             font-style: italic;
         }
 
+        /* Mobile Optimierungen */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 16px;
+                line-height: 1.6;
+            }
+
+            h1 {
+                font-size: 26px;
+                margin-bottom: 12px;
+                padding-bottom: 10px;
+                border-bottom-width: 3px;
+            }
+
+            .subtitle {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                font-size: 20px;
+                margin-top: 28px;
+                margin-bottom: 14px;
+                padding-left: 12px;
+                border-left-width: 4px;
+            }
+
+            h3 {
+                font-size: 17px;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+
+            h4 {
+                font-size: 15px;
+                margin-top: 16px;
+                margin-bottom: 8px;
+            }
+
+            p, li {
+                font-size: 15px;
+                margin-bottom: 10px;
+                text-align: left;
+            }
+
+            ul, ol {
+                margin-left: 20px;
+            }
+
+            .highlight-box,
+            .concept-box,
+            .checkpoint-box,
+            .error-box {
+                padding: 14px;
+                margin: 16px 0;
+                border-left-width: 3px;
+            }
+
+            .check-list li,
+            .error-list li {
+                padding-left: 28px;
+                margin-bottom: 8px;
+            }
+
+            .check-list li:before,
+            .error-list li:before {
+                font-size: 16px;
+            }
+
+            .solution {
+                margin-left: 28px;
+                font-size: 14px;
+                display: block;
+                margin-top: 6px;
+            }
+
+            .footer {
+                margin-top: 36px;
+                padding-top: 20px;
+                font-size: 14px;
+            }
+        }
+
+        /* Sehr kleine Bildschirme */
+        @media screen and (max-width: 480px) {
+            body {
+                padding: 12px;
+            }
+
+            h1 {
+                font-size: 24px;
+                word-wrap: break-word;
+            }
+
+            .subtitle {
+                font-size: 15px;
+            }
+
+            h2 {
+                font-size: 18px;
+                padding-left: 10px;
+            }
+
+            h3 {
+                font-size: 16px;
+            }
+
+            h4 {
+                font-size: 15px;
+            }
+
+            p, li {
+                font-size: 14px;
+            }
+
+            .highlight-box,
+            .concept-box,
+            .checkpoint-box,
+            .error-box {
+                padding: 12px;
+                margin: 14px 0;
+            }
+
+            ul, ol {
+                margin-left: 18px;
+            }
+
+            .check-list li,
+            .error-list li {
+                padding-left: 26px;
+            }
+
+            .solution {
+                margin-left: 26px;
+                font-size: 13px;
+            }
+        }
+
         @media print {
             body {
                 padding: 0;
@@ -222,8 +352,7 @@
             .highlight-box,
             .concept-box,
             .checkpoint-box,
-            .error-box,
-            .demo-box {
+            .error-box {
                 page-break-inside: avoid;
             }
         }
@@ -269,7 +398,7 @@
 
     <h2>Das Problem mit muskulärer Spannung</h2>
 
-    <div class="demo-box">
+    <div>
         <h3>Demonstration 1: Neutrale Stellung</h3>
 
         <p><strong>Mit Spannung:</strong></p>
@@ -285,7 +414,7 @@
         </ul>
     </div>
 
-    <div class="demo-box">
+    <div>
         <h3>Demonstration 2: Horse-Stance mit Fauststoß</h3>
         <ul>
             <li>Arm und Schulter angespannt → Druck gegen die Faust → Struktur bricht</li>
